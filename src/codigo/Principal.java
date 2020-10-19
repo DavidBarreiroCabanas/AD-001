@@ -21,24 +21,31 @@ public class Principal {
 			
 			Persona per = new Persona();
 
+			ArrayList lista = per.list();
+			ArrayList<Persona> lista2 = lista;
+			for (Persona persona : lista2) {
+				System.out.println( persona.getId() + "-Persona:"+persona.getName());
+			}
+			
+			
 			per.setName("Jose"); 
 			per.setLastname("Pepito"); 
-			per.setId(1);
 			per.insertar();
 			
 			
 			
-			ArrayList lista = per.list();
-			ArrayList<Persona> lista2 = lista;
+			//ArrayList lista = per.list();
+			//ArrayList<Persona> lista2 = lista;
 			for (Persona persona : lista2) {
 				System.out.println("1-Persona:"+persona.getName());
 			}
 			
 			
 			
-			per.setName("Don");
+			per.setName("PericoPalotes");
 			per.setLastname("Jose");
 			
+			per.setId(5);
 			per.update();
 			
 			lista = per.list();
