@@ -63,6 +63,11 @@ public class Producto extends DbObject{
 		return this.id;
 	}
 	
+	
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	@Override
 	public String getTable() {
@@ -87,8 +92,20 @@ public class Producto extends DbObject{
 
 	@Override
 	public DbObject parse(ResultSet rs) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		Producto prod = new Producto();
+		prod.id = rs.getInt("id");
+		prod.name = rs.getString("name");
+		prod.desc = rs.getString("desc");
+		prod.precio = rs.getInt("precio");
+		prod.stock = rs.getInt("stock");
+		return prod;
 	}
+
+	@Override
+	public String toString() {
+		return "id=" + this.id + ", name=" + this.name + ", desc=" + this.desc + ", precio=" + this.precio + ", stock=" + this.stock;
+	}
+	
+	
 
 }

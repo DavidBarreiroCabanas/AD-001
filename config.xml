@@ -5,7 +5,7 @@
 		<driver>com.mysql.jdbc.Driver</driver>
 		<host>jdbc:mysql://127.0.0.1:3306/clase?useSSL=false</host>
 		<user>root</user>
-		<pass>HwapeBYv</pass>
+		<pass>@crs$pDj</pass>
 	</conexion>
 
 	<queries>

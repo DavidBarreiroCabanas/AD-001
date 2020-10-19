@@ -79,6 +79,13 @@ public class Persona extends DbObject {
 		this.lastname = lastname;
 	}
 
+	@Override
+	public String toString() {
+		return "id = " + this.id + ", name = " + this.name + ", lastname = " + this.lastname;
+	}
+	
+	
+
 	
  
 }

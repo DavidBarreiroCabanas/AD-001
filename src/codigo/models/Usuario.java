@@ -55,8 +55,18 @@ public class Usuario extends DbObject{
 	
 	@Override
 	public DbObject parse(ResultSet rs) throws SQLException {
-		
-		return null;
+		Usuario user = new Usuario();
+		user.id = rs.getInt("id");
+		user.name = rs.getString("name");
+		user.telefono = rs.getInt("telefono");
+		user.direccion = rs.getString("direccion");
+		return user;
+	}
+
+	
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 
 
@@ -89,6 +99,13 @@ public class Usuario extends DbObject{
 		this.direccion = direccion;
 	}
 
+
+	@Override
+	public String toString() {
+		return "id=" + this.id + ", name=" + this.name + ", telefono=" + this.telefono + ", direccion=" + this.direccion;
+	}
+
+	
 
 
 }
