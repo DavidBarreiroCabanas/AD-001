@@ -18,7 +18,7 @@ public class Principal {
 			
 			
 			
-	/*		
+			
 			Persona per = new Persona();
 
 			per.setName("Jose"); 
@@ -49,8 +49,8 @@ public class Principal {
 			
 			per.delete();
 			
-	*/		
 			
+		/*	
 			
 			Usuario user = new Usuario();
 			
@@ -66,7 +66,7 @@ public class Principal {
 				System.out.println("1-Persona:"+usuario.getName());
 			}
 			
-			
+		*/	
 			
 		}catch(SQLException e) {
 			System.out.println( e.getMessage() );
