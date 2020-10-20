@@ -9,10 +9,10 @@
 	</conexion>
 
 	<queries>
-		<query>CREATE TABLE IF NOT EXISTS `person`   (`id` INT NOT NULL, `name` VARCHAR(50) NOT NULL DEFAULT '',`lastname` VARCHAR(50) NOT NULL DEFAULT '',	PRIMARY KEY (`id`)) COLLATE='latin1_spanish_ci';</query>
-		<query>CREATE TABLE IF NOT EXISTS `producto` (	`id` INT NOT NULL,	`name`	TEXT,	`desc`	TEXT,	`precio` INTEGER DEFAULT 0,	`stock`	INTEGER DEFAULT 1,	PRIMARY KEY(`id`) );
+		<query>CREATE TABLE IF NOT EXISTS `person`   (`id` INT NOT NULL AUTO_INCREMENT, `name` VARCHAR(50) NOT NULL DEFAULT '',`lastname` VARCHAR(50) NOT NULL DEFAULT '',	PRIMARY KEY (`id`)) COLLATE='latin1_spanish_ci';</query>
+		<query>CREATE TABLE IF NOT EXISTS `producto` (	`id` INT NOT NULL AUTO_INCREMENT,	`name`	TEXT,	`desc`	TEXT,	`precio` INTEGER DEFAULT 0,	`stock`	INTEGER DEFAULT 1,	PRIMARY KEY(`id`) );
 		</query>
-		<query>CREATE TABLE IF NOT EXISTS `usuario` (	`id` INT NOT NULL,	`name`	TEXT,	`telefono`	INT,	`direccion` TEXT, PRIMARY KEY(`id`) );
+		<query>CREATE TABLE IF NOT EXISTS `usuario` (	`id` INT NOT NULL AUTO_INCREMENT,	`name`	TEXT,	`telefono`	INT,	`direccion` TEXT, PRIMARY KEY(`id`) );
 		</query>
 	</queries>
 </configuration>
