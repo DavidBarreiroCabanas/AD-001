@@ -85,7 +85,6 @@ public class Persona extends DbObject {
 	}
 	
 	
-
 	
  
 }
