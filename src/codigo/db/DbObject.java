@@ -74,4 +74,9 @@ public abstract class DbObject {
 		ctx.delete(getTable(), getId());
 	}
 	
+	public void select() throws SQLException{
+		ctx.select(getTable(), getCols(), getValues());
+		
+	}
+	
 }
